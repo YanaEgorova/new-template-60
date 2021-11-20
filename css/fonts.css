@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-Regular.eot');
+    src: url('../fonts/WorkSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WorkSans-Regular.woff2') format('woff2'),
+        url('../fonts/WorkSans-Regular.woff') format('woff'),
+        url('../fonts/WorkSans-Regular.ttf') format('truetype'),
+        url('../fonts/WorkSans-Regular.svg#WorkSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans Bold';
+    src: url('../fonts/WorkSans-SemiBold.eot');
+    src: url('../fonts/WorkSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WorkSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/WorkSans-SemiBold.woff') format('woff'),
+        url('../fonts/WorkSans-SemiBold.ttf') format('truetype'),
+        url('../fonts/WorkSans-SemiBold.svg#WorkSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Airfool';
+    src: url('../fonts/Airfool.eot');
+    src: url('../fonts/Airfool.eot') format('embedded-opentype'),
+        url('../fonts/Airfool.woff2') format('woff2'),
+        url('../fonts/Airfool.woff') format('woff'),
+        url('../fonts/Airfool.ttf') format('truetype'),
+        url('../fonts/Airfool.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+

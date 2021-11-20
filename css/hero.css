@@ -1,0 +1,63 @@
+.hero__wrapper {
+    /* background-image: url('../img/GIRL.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 40% auto; */
+    position: relative;
+    /* background-color: var(--first-brand-color); */
+    overflow: hidden;
+
+
+    background-image: url('../img/backg3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero {
+    padding: 25rem 0 20rem;
+
+    /* background-image: url('https://www.freeiconspng.com/uploads/kids-png--18.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto; */
+}
+.hero .title {
+    position: relative;
+    z-index: 3;
+    color: var(--first-brand-color);
+}
+.title-box {
+    /* background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain; */
+}
+
+
+.hero .title:before {
+  content: attr(title);
+  position: absolute;
+  -webkit-text-stroke: 0.11em var(--third-brand-color); 
+  color: var(--third-brand-color);
+  
+  left: 0;
+  z-index: -1;
+
+  font-family: var(--main-title-font);
+  text-transform: uppercase;
+  font-size: 8.2rem;
+}
+@media screen and (min-width: 768px) {
+    .hero .title:before {
+        font-size: 15rem;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .hero .title {
+        font-size: 20rem;
+    }
+    .hero .title:before {
+        font-size: 20rem;
+    }
+}

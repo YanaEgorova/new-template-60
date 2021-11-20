@@ -1,0 +1,21 @@
+:root {
+  --main-bg-color: #fff;
+  --sub-bg-color: #000;
+  --main-text-color: #000;
+  --sub-text-color: #fff;
+  --inactive: #818181;
+  --success: #bee3be;
+  --link-color: blue;
+  --accent-color: #ff0000;
+
+  --first-brand-color: #6fbcb6;
+  --second-brand-color: #8e77ce;
+  --third-brand-color: #fdeaae;
+  --fourth-brand-color: #ea688f;
+
+  --main-font:  'Work Sans';
+  --title-font:  'Work Sans Bold';
+  --main-title-font: 'Airfool';
+
+  font-size: 62.5%;
+}
