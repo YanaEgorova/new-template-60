@@ -16,6 +16,7 @@ let prevExpDataInputValue = '';
 let formData = new FormData(form);
 formData = formData.entries(); 
 let allFields = form.querySelectorAll('.js_input');
+allFields = [...allFields];
 let allLengthLimitedInputs = form.querySelectorAll('.js_input-limit');
 
 allFields.forEach(field => {
@@ -141,13 +142,10 @@ function fieldValidation(event) {
       break;
   }
 
-  console.log('checkResult', field.value.trim().length);
-  // console.log('checkResult', checkResult.trim().length);
+  
   if(field.value.trim().length === 0) {
-    // console.log('111');
     setError(field);
   } else if(checkResult.trim().length !== 0 ) {
-    console.log('222')
     setError(field, checkResult);
   } 
 }
@@ -227,7 +225,10 @@ function hasError(element) {
 }
 
 function setError(field, error = 'Please fill out the field above') {
+  console.log('field', field);
+  console.log('error', error);
   const label = field.closest('label');
+  if(!label) return;
   const oldError = label.querySelector('.js_error-span');
   const errorSpan = document.createElement('span');
 
