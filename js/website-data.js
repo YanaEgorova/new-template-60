@@ -73,7 +73,8 @@ function setInformation(array, info) {
 
 function setWebsiteHref(array, info) {
     array.forEach(item => {
-       item.hasAttribute('href') && item.setAttribute('href', info);
+        console.log('item', item);
+       item.hasAttribute('href') && item.setAttribute('href', `http://${info}`);
     });
 }
 
