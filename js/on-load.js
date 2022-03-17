@@ -1,4 +1,4 @@
-import {getLocalStorageItem} from './local-storage.js';
+import {getLocalStorageItem, getCartFulfillment} from './local-storage.js';
 import {tableRowTemplate} from './templates/table-row-template.js';
 // import {minAmount} from './calculate-total.js';
 // import {maxAmount} from './calculate-total.js';
@@ -9,7 +9,8 @@ const totalPrice = document.querySelectorAll('.js_total-price');
 const emptyMessage = document.querySelector('.js_empty-cart');
 const table = document.querySelector('.js_product-table');
 
-
+const totalField = document.querySelector('#totalField');
+const cartField = document.querySelector('#cartField');
 
 
 window.onload = function() {
@@ -44,6 +45,8 @@ function clearLocalStorage(e) {
 function shopPageFunctional() {
    hideEmptyMessage();
    const dataArray = getLocalStorageItem();
+   cartField.value = JSON.stringify(getCartFulfillment());
+   
    let total = 0;
    dataArray.forEach(product => {
       const productTotal = Number((product.quantity * product.price).toFixed(2));
@@ -53,6 +56,7 @@ function shopPageFunctional() {
    totalQuantity.textContent = setAmountToCartSpan();
    [...totalPrice].forEach(totalPrice => {
       totalPrice.textContent = `$${total.toFixed(2)}`;
+      totalField.value = total.toFixed(2);
    })
    
    const removeBtns = document.querySelectorAll('.js_remove-product');

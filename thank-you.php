@@ -59,6 +59,9 @@
                   <img src="./img/thank6.png" alt="" class="img">
                 <!-- <h1 class="title">Thank you</h1> -->
                 <p class="text">Your order was completed successfully!</p>
+                <?php if($_GET["order_id"]){ ?> 
+      <p class="text" style="font-size: 3rem">Your Order ID is: <?php echo htmlspecialchars($_GET["order_id"]); ?></p>
+    <?php } ?>
               </div>
           </div>
         </section>
