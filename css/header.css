@@ -1,12 +1,9 @@
 .header__wrapper {
     position: relative;
     background-color: var(--third-brand-color);
-    /* background-color: var(--second-brand-color); */
-
-    /* background-image: url('https://www.teahub.io/photos/full/4-48820_photo-wallpaper-children-background-mood-figure-kids-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
+}
+body.open-menu {
+    overflow: hidden;
 }
 .header {
     /* background-color: #fff; */
